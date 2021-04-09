@@ -21,7 +21,7 @@ const [facts, setFacts] = React.useState([]);
 
   return (
     <div className="not-found-view">
-      <Title>Hello,there facts</Title>
+      <Title>Hello facts</Title>
       <span>{facts}</span>
     </div>
     
