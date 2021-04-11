@@ -3,6 +3,7 @@ import { navigate } from "@reach/router";
 import Button from "../../components/Button";
 import "./index.css";
 import Title from "../../components/Title";
+import Frame from "../../components/Frame";
 
 const Facts = () => {
 
@@ -22,7 +23,7 @@ const [facts, setFacts] = React.useState([]);
   return (
     <div className="not-found-view">
       <Title>Hello facts</Title>
-      <span>{facts}</span>
+      <Frame factText={facts}/>
     </div>
     
   );

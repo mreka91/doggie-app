@@ -1,0 +1,14 @@
+.frame {
+  background-color: hotpink;
+  width: 800px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.frame h1 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  padding: 5px;
+}
