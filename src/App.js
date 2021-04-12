@@ -11,15 +11,15 @@ function App() {
   return (
     <>
       <nav className="nav">
-        <Link to={process.env.PUBLIC_URL + "/"}>Home</Link>
-        <Link to={process.env.PUBLIC_URL + "/pictures"}>Pictures</Link>
-        <Link to={process.env.PUBLIC_URL + "/facts"}>Facts</Link>
+        <Link to="/">Home</Link>
+        <Link to="pictures">Pictures</Link>
+        <Link to="facts">Facts</Link>
       </nav>
       <div className="App">
         <Router>
-          <Home path={process.env.PUBLIC_URL + "/"} />
-          <Pictures path={process.env.PUBLIC_URL + "/pictures"} />
-          <Facts path={process.env.PUBLIC_URL + "/facts"} />
+          <Home path="/" />
+          <Pictures path="/pictures" />
+          <Facts path="/facts" />
         </Router>
       </div>
     </>
