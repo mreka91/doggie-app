@@ -1,5 +1,4 @@
 import React from "react";
-import { Redirect } from "@reach/router";
 import { navigate } from "@reach/router";
 import Button from "./../../components/Button";
 import "./index.css";

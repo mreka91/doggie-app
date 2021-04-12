@@ -1,17 +1,25 @@
 .btn {
-    padding: 10px 20px;
-    background-color: orange;
-    border: 0;
-    border-radius: 2px;
-    font-weight: bold;
-    font-size: 12px;
-    letter-spacing: 1px;
-    font-family: Helvetica;
-    transition: 0.2s ease;
-    margin: 20px 0;
-    cursor: pointer;
-  }
-  
-  .btn:hover {
-    background-color: orangered;
-  }
+  padding: 10px 20px;
+  background-color: rgb(75, 11, 53);
+  border: 0;
+  border-radius: 2px;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  transition: 0.2s ease;
+  margin: 20px 0;
+  cursor: pointer;
+  color: rgb(212, 164, 101);
+}
+
+.btn img {
+  width: 30px;
+  padding-left: 10px;
+}
+
+.btn:hover {
+  background-color: rgb(248, 116, 204);
+  color: black;
+}

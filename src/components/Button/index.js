@@ -1,11 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 import "./index.css";
+import bone from "../../assets/images/dog_bone.webp";
 
 const Button = (props) => {
   return (
     <button onClick={props.handleClick} className="btn">
       {props.buttonText}
+      <img src={bone} alt="bone" />
     </button>
   );
 };

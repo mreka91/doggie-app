@@ -1,13 +1,14 @@
 import React from "react";
-import { navigate } from "@reach/router";
+
 import Button from "../../components/Button";
 import "./index.css";
 import Title from "../../components/Title";
 
 const Pictures = (props) => {
   return (
-    <div className="not-found-view">
+    <div className="picture-view">
       <Title>Hello pics</Title>
+      <Button />
     </div>
   );
 };
