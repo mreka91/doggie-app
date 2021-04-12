@@ -3,14 +3,11 @@ import "./index.css";
 import PropTypes from "prop-types";
 
 const Frame = (props) => {
-    return (
-        <div className="frame">
-            <h1>
-                {props.factText}
-             </h1> 
-        </div>
-
-    );
+  return (
+    <div className="frame">
+      <h1>{props.factText}</h1>
+    </div>
+  );
 };
 
 Frame.propTypes = {
