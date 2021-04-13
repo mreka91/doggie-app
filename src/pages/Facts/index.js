@@ -5,7 +5,7 @@ import Title from "../../components/Title";
 import Frame from "../../components/Frame";
 
 const Facts = () => {
-  let [facts, setFacts] = React.useState([]);
+  /*   let [facts, setFacts] = React.useState([]);
 
   React.useEffect(() => {
     fetch("api/v1/resources/dogs?number=1")
@@ -14,12 +14,12 @@ const Facts = () => {
         setFacts(json[0].fact);
         console.log(json);
       });
-  }, []);
+  }, []); */
 
   return (
     <div className="fact-view">
       <Title>Random doggie fact</Title>
-      <Frame factText={facts} />
+      {/* <Frame factText={facts} /> */}
       <Button
         buttonText="Give me another doggie fact"
         handleClick={() => window.location.reload(false)}
