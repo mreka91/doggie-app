@@ -8,7 +8,7 @@ const Facts = () => {
   let [facts, setFacts] = React.useState([]);
 
   React.useEffect(() => {
-    fetch("https://dog-facts-api.herokuapp.com/api/v1/resources/dogs?number=1")
+    fetch("api/v1/resources/dogs?number=1")
       .then((res) => res.json())
       .then((json) => {
         setFacts(json[0].fact);
