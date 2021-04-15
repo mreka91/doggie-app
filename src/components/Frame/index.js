@@ -15,7 +15,7 @@ Frame.propTypes = {
 };
 
 Frame.defaultProps = {
-  factText: "wanna see read about a dog?",
+  factText: "wanna read about a dog?",
 };
 
 export default Frame;

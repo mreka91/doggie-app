@@ -1,0 +1,15 @@
+.reactions {
+  width: 450px;
+  padding: 25px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.reaction {
+  padding: 10px 20px;
+  background-color: rgb(75, 11, 53);
+}
+
+.reaction:hover {
+  background-color: rgb(248, 116, 204);
+}
