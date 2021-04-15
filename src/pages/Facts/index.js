@@ -41,8 +41,8 @@ const Facts = () => {
         )}
       </div>
       <div>
-        {dogs.length - index === 0 ? (
-          <Match match="No more" />
+        {dogs.length - index <= 0 ? (
+          <Match match="No more matches for you today!" matchNumber="0" />
         ) : (
           <Match
             match="Possible matches left for today:"
