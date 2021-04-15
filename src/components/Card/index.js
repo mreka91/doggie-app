@@ -18,7 +18,7 @@ Card.propTypes = {
 };
 
 Card.defaultProps = {
-  alt: "Come back tomorrow",
+  alt: "picture of a dog",
 };
 
 export default Card;
