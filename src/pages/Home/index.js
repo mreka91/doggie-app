@@ -35,7 +35,7 @@ const randomDogName = dogNames.allRandom()
   };
 
   return (
-    <div className="fact-view">
+    <div className="home-view">
       <Title>Find your perfect match!</Title>
       <div>
         {index <= dogs.length - 1 ? (

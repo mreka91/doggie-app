@@ -1,6 +1,6 @@
 .reactions {
   width: 450px;
-  padding: 25px;
+  padding: 10px;
   display: flex;
   justify-content: space-around;
 }
