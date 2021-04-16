@@ -13,6 +13,7 @@ const Home = () => {
   const [dogs, setDogs] = useState([]);
   const [index, setIndex] = useState(0);
   const url = "https://dog.ceo/api/breeds/image/random/10";
+  let likedImages = {sadDog};
 
 const randomDogName = dogNames.allRandom()
 
@@ -28,8 +29,12 @@ const randomDogName = dogNames.allRandom()
       }) */
   }, []);
 
-  const next = () => {
+  const next = (likeOrDislike) => {
     setIndex(index + 1);
+    if(likeOrDislike == "like"){
+      likedImages = (dogs[index]);
+      console.log(dogs[index])
+    }
     //console.log(index);
     //console.log(dogs.length);
   };
@@ -55,10 +60,12 @@ const randomDogName = dogNames.allRandom()
         )}
       </div>
       <div className="reactions">
-        <Reaction icon="💗" handleClick={() => next()} />
+        <Reaction icon="💗" handleClick={() => next("like")} />
         <Button buttonText="Get to know me" />
-        <Reaction icon="❌" handleClick={() => next()} />
+        <Reaction icon="❌" handleClick={() => next("dislike")} />
+        <img src={likedImages}/>
       </div>
+     
     </div>
   );
 };
