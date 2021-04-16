@@ -32,7 +32,7 @@ const Home = () => {
 
   const next = (likeOrDislike) => {
     setIndex(index + 1);
-    if (likeOrDislike == "like") {
+    if (likeOrDislike === "like") {
       setMatches(dogs[index]);
 
       /*       console.log(dogs[index]);
