@@ -18,23 +18,23 @@ const Facts = () => {
       .then((result) => {
         //console.log(result.message.length);
         setDogs(result.message);
-      })
-      .catch((error) => {
-        alert("error", error);
       });
+    /*       .catch((error) => {
+        alert("error", error);
+      }) */
   }, []);
 
   const next = () => {
     setIndex(index + 1);
-    console.log(index);
-    console.log(dogs.length);
+    //console.log(index);
+    //console.log(dogs.length);
   };
 
   return (
     <div className="fact-view">
       <Title>Find your perfect match!</Title>
       <div>
-        {index <= dogs.length ? (
+        {index <= dogs.length - 1 ? (
           <Card image={dogs[index]} title="Is it me?" />
         ) : (
           <Card image={sadDog} title="Come back tomorrow to see more doggies" />
