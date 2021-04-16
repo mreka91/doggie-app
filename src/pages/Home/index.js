@@ -11,9 +11,10 @@ const dogNames = require('dog-names');
 
 const Home = () => {
   const [dogs, setDogs] = useState([]);
+  const [matches, setMatches] = useState([]);
   const [index, setIndex] = useState(0);
   const url = "https://dog.ceo/api/breeds/image/random/10";
-  let likedImages = {sadDog};
+  let likedImages = [];
 
 const randomDogName = dogNames.allRandom()
 
@@ -32,8 +33,10 @@ const randomDogName = dogNames.allRandom()
   const next = (likeOrDislike) => {
     setIndex(index + 1);
     if(likeOrDislike == "like"){
-      likedImages = (dogs[index]);
-      console.log(dogs[index])
+      console.log(dogs[index]);
+     likedImages.push(dogs[index]);
+
+      console.log(likedImages);
     }
     //console.log(index);
     //console.log(dogs.length);
@@ -63,9 +66,8 @@ const randomDogName = dogNames.allRandom()
         <Reaction icon="💗" handleClick={() => next("like")} />
         <Button buttonText="Get to know me" />
         <Reaction icon="❌" handleClick={() => next("dislike")} />
-        <img src={likedImages}/>
+
       </div>
-     
     </div>
   );
 };

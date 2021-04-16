@@ -6,7 +6,6 @@ import { Router, Link } from "@reach/router";
 
 //pages
 import Home from "./pages/Home";
-import Pictures from "./pages/Pictures";
 import LogIn from "./pages/LogIn";
 import NotFound from "./pages/NotFound";
 

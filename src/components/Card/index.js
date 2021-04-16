@@ -5,7 +5,7 @@ import "./index.css";
 const Card = (props) => {
   return (
     <article className="polaroid">
-      <img src={props.image} alt={props.alt} />
+      <img src={props.image} alt={props.alt} className="polaroid-image"/>
       <div className="container">
         <h3>{props.title}</h3>
       </div>
