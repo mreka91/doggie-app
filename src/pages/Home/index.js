@@ -7,16 +7,16 @@ import sadDog from "../../assets/images/saddog.png";
 import "./index.css";
 import Match from "../../components/Match";
 
-const dogNames = require('dog-names');
+const dogNames = require("dog-names");
 
 const Home = () => {
   const [dogs, setDogs] = useState([]);
   const [matches, setMatches] = useState([]);
   const [index, setIndex] = useState(0);
   const url = "https://dog.ceo/api/breeds/image/random/10";
-  let likedImages = [];
+  //let likedImages = [];
 
-const randomDogName = dogNames.allRandom()
+  const randomDogName = dogNames.allRandom();
 
   useEffect(() => {
     fetch(url)
@@ -32,14 +32,14 @@ const randomDogName = dogNames.allRandom()
 
   const next = (likeOrDislike) => {
     setIndex(index + 1);
-    if(likeOrDislike == "like"){
-      console.log(dogs[index]);
-     likedImages.push(dogs[index]);
+    if (likeOrDislike == "like") {
+      setMatches(dogs[index]);
 
-      console.log(likedImages);
+      /*       console.log(dogs[index]);
+      likedImages.push(dogs[index]);
+
+      console.log(likedImages[0]); */
     }
-    //console.log(index);
-    //console.log(dogs.length);
   };
 
   return (
@@ -66,7 +66,9 @@ const randomDogName = dogNames.allRandom()
         <Reaction icon="💗" handleClick={() => next("like")} />
         <Button buttonText="Get to know me" />
         <Reaction icon="❌" handleClick={() => next("dislike")} />
-
+      </div>
+      <div>
+        <Card image={matches} title="I woff you!" />
       </div>
     </div>
   );
