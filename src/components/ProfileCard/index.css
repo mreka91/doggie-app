@@ -1,0 +1,10 @@
+.profile{
+    background-color: rgba(231, 189, 149, 0.336);
+    width:600px;
+    text-align: center;
+}
+
+.profile-image{
+    border-radius: 50%;
+    width: 200px;
+}

@@ -2,24 +2,23 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./index.css";
 
-const Card = (props) => {
+const Results = (props) => {
   return (
     <article className="polaroid">
       <img src={props.image} alt={props.alt} className="polaroid-image"/>
       <div className="container">
         <h3>{props.title}</h3>
-        <p>{props.distance} km away</p>
       </div>
     </article>
   );
 };
 
-Card.propTypes = {
+Results.propTypes = {
   alt: PropTypes.string,
 };
 
-Card.defaultProps = {
+Results.defaultProps = {
   alt: "picture of a dog",
 };
 
-export default Card;
+export default Results;
