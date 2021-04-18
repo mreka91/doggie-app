@@ -1,16 +1,27 @@
+@font-face {
+  font-family: "GothamRounded-Medium";
+  src: local("GothamRounded-Medium"), url("./assets/fonts/GothamRounded-Medium.woff2") format('woff2');
+}
+@font-face {
+  font-family: "GothamRounded-Light";
+  src: local("GothamRounded-Light"), url("./assets/fonts/GothamRounded-Light.woff2") format('woff2');
+}
+@font-face {
+  font-family: "GothamRounded-Bold";
+  src: local("GothamRounded-Bold"), url("./assets/fonts/GothamRounded-Bold.woff2") format('woff2');
+}
 .nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: #eecf96;
+  background-color: #fce8c5;
   width: 100vw;
   height: 10vh;
 }
 
 .nav a {
   text-decoration: none;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: GothamRounded-Medium;
   color: black;
   font-weight: 600;
 }

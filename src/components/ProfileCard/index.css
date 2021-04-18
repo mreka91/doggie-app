@@ -1,7 +1,9 @@
 .profile{
-    background-color: rgba(231, 189, 149, 0.336);
+    background: rgba(252, 92, 92, 0.795);
+background: linear-gradient(90deg, rgba(252, 92, 92, 0.733) 0%, rgba(252, 60, 130, 0.774) 100%);
     width:600px;
     text-align: center;
+    font-family: GothamRounded-Light;
 }
 
 .profile-image{

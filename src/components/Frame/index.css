@@ -1,20 +1,7 @@
 .frame {
-  background-color: hotpink;
-  width: 400px;
-  height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-@media only screen and (min-width: 900px) {
-  .frame {
-    width: 800px;
-  }
-}
-
-.frame h1 {
-  font-family: "Courier New", Courier, monospace;
+  background: rgb(252,92,92);
+  background: radial-gradient(circle, rgba(252,92,92,1) 47%, rgba(252,60,131,1) 100%);
+  font-family: GothamRounded-Medium;
   font-size: 20px;
   padding: 5px;
 }

@@ -5,4 +5,5 @@ export const TitleStyled = styled.h3`
   color: black;
   font-weight: 400;
   margin:0;
+  font-family:GothamRounded-Light;
 `;
