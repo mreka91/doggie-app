@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <nav className="nav">
-        <Link to="">Create account</Link>
+        <Link to="">Profil</Link>
         <Link  to="/"><img className="logoOfLove" src={logo} alt="logo of love"/></Link>
         <Link to="matches">Matches</Link>
       </nav>

@@ -4,8 +4,8 @@ import Card from "../../components/Card";
 import Reaction from "../../components/Reaction";
 import Button from "../../components/Button";
 import sadDog from "../../assets/images/saddog.png";
-import heart from "../../assets/images/heart.svg";
-import dislike from "../../assets/images/x.svg";
+import heart from "../../assets/images/heart-48-64.png";
+import notheart from "../../assets/images/x-mark-64.png";
 import "./index.css";
 import Match from "../../components/Match";
 
@@ -17,7 +17,7 @@ const Home = () => {
   const [matches, setMatches] = useState([]);
   const [index, setIndex] = useState(0);
   const url = "https://dog.ceo/api/breeds/image/random/10";
-  //let likedImages = [];
+  
 
   const randomDogName = dogNames.allRandom();
 
@@ -36,47 +36,30 @@ const Home = () => {
   const next = (likeOrDislike) => {
     setIndex(index + 1);
     if (likeOrDislike === "like") {
-      /* localStorage. */setMatches(dogs[index]);
-
-      /*       console.log(dogs[index]);
-      likedImages.push(dogs[index]);
-
-      console.log(likedImages[0]); */
+    setMatches(dogs[index]);
     }
   };
 
   return (
     <div className="home-view">
       <Title>Find your perfect match!</Title>
-      <div>
         {index <= dogs.length - 1 ? (
           <Card image={dogs[index]} title={randomDogName} />
         ) : (
           <Card image={sadDog} title="Come back tomorrow to see more doggies" />
         )}
-      </div>
-{/*       <div>
-        {dogs.length - index <= 0 ? (
-          <Match match="No more matches for you today!" matchNumber="0" />
-        ) : (
-          <Match
-            match="Possible matches left for today:"
-            matchNumber={dogs.length - index}
-          />
-        )}
-      </div> */}
-      <div className="reactions">
+      <div className="reactions-home">
         <Reaction icon={heart} handleClick={() => next("like")} />
 
-                {dogs.length - index <= 0 ? (
-          <Button buttonText="No more matches for you today!" matchNumber="0" />
+        {dogs.length - index <= 0 ? (
+          <Match match="No more swipes for today" matchNumber="" />
         ) : (
-          <Button
-          buttonText="Swipes left:"
+          <Match
+            match="Swipes left:"
             matchNumber={dogs.length - index}
           />
         )}
-        <Reaction icon={dislike} handleClick={() => next("dislike")} />
+        <Reaction icon={notheart} handleClick={() => next("dislike")} />
       </div>
       <div>
         <Card image={matches} title="I woff you!" />

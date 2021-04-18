@@ -5,8 +5,8 @@ import "./index.css";
 
 const Matches = () => {
   return (
-    <div className="home">
-      <Title>Facts and pics...all about dogs!&#128054;</Title>
+    <div className="matched">
+      <Title>See all your matches!&#128054;</Title>
     {/* <Card image={matches} title="I woff you!" /> */}
     </div>
   );

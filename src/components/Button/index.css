@@ -1,6 +1,6 @@
 .btn {
   padding: 15px 20px;
-  background-color: rgb(95, 9, 41, 1);
+  background-color: #fc4c74;
   border: 0;
   border-radius: 50%;
   font-weight: 500;
@@ -22,12 +22,9 @@
   margin-top: 5px;
 }
 
-.btn img {
-  width: 30px;
-  /* padding-left: 10px; */
-}
 
 .btn:hover {
-  background-color: rgb(248, 116, 204);
-  color: black;
+  background-color: #fc5c5c;
+  
 }
+

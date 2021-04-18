@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: space-around;
   background-color: #eecf96;
-  width: 100wv;
+  width: 100vw;
   height: 10vh;
 }
 
@@ -20,8 +20,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100vw;
+  height:90vh;
 }
 
 .logoOfLove {
   width: 50px;
 }
+
+
+
+/*
+Logo colors
+#fc5c5c
+#fc3c83
+#fc4474
+#fc605c
+#fc4c74
+
+
+*/

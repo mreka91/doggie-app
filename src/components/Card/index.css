@@ -1,5 +1,7 @@
 .container {
   padding: 10px;
+  margin-bottom:25px;
+  
 }
 
 .polaroid {
@@ -7,10 +9,7 @@
   width: 450px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
-}
-
-.polaroid img {
-  width: 100%;
+  margin-top:15px;
 }
 
 .polaroid-image {

@@ -1,4 +1,12 @@
 .home-view {
   height: 90vh;
   margin-top: 1rem;
+} 
+
+.reactions-home{
+  width:450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+

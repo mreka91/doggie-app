@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 const Match = (props) => {
   return (
-    <div className="frame">
+    <div className="matches-frame">
       <h5>{props.match}</h5>
       <p> {props.matchNumber}</p>
     </div>

@@ -1,8 +1,23 @@
-.frame p {
-  font-size: 3rem;
-  margin: 0;
+.matches-frame{
+  padding: 20px;
+  margin: 20px;
+  background-color: #fc7575;
+  color:white;
+  border-radius: 50%;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-.frame h5 {
-  font-size: 14px;
+.matches-frame h5{
+  font-size: 16px;
+  margin:5px;
 }
+.matches-frame p{
+  font-size: 18px;
+  margin:5px;
+}
+
+
