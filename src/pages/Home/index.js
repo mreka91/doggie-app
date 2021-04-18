@@ -4,8 +4,11 @@ import Card from "../../components/Card";
 import Reaction from "../../components/Reaction";
 import Button from "../../components/Button";
 import sadDog from "../../assets/images/saddog.png";
+import heart from "../../assets/images/heart.svg";
+import dislike from "../../assets/images/x.svg";
 import "./index.css";
 import Match from "../../components/Match";
+
 
 const dogNames = require("dog-names");
 
@@ -33,7 +36,7 @@ const Home = () => {
   const next = (likeOrDislike) => {
     setIndex(index + 1);
     if (likeOrDislike === "like") {
-      setMatches(dogs[index]);
+      /* localStorage. */setMatches(dogs[index]);
 
       /*       console.log(dogs[index]);
       likedImages.push(dogs[index]);
@@ -52,7 +55,7 @@ const Home = () => {
           <Card image={sadDog} title="Come back tomorrow to see more doggies" />
         )}
       </div>
-      <div>
+{/*       <div>
         {dogs.length - index <= 0 ? (
           <Match match="No more matches for you today!" matchNumber="0" />
         ) : (
@@ -61,11 +64,19 @@ const Home = () => {
             matchNumber={dogs.length - index}
           />
         )}
-      </div>
+      </div> */}
       <div className="reactions">
-        <Reaction icon="💗" handleClick={() => next("like")} />
-        <Button buttonText="Get to know me" />
-        <Reaction icon="❌" handleClick={() => next("dislike")} />
+        <Reaction icon={heart} handleClick={() => next("like")} />
+
+                {dogs.length - index <= 0 ? (
+          <Button buttonText="No more matches for you today!" matchNumber="0" />
+        ) : (
+          <Button
+          buttonText="Swipes left:"
+            matchNumber={dogs.length - index}
+          />
+        )}
+        <Reaction icon={dislike} handleClick={() => next("dislike")} />
       </div>
       <div>
         <Card image={matches} title="I woff you!" />

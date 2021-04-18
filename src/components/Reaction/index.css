@@ -6,10 +6,19 @@
 }
 
 .reaction {
-  padding: 10px 20px;
-  background-color: rgb(75, 11, 53);
+  padding: 25px;
+  background-color: rgb(252, 96, 92);
+  border-radius: 50%;
+  border: none;
+  box-shadow: 7px 4px 6px rgb(0 0 0 / 12%), 0 2px 2px rgb(0 0 0 / 12%),
+    0 4px 4px rgb(0 0 0 / 12%), 0 8px 8px rgb(0 0 0 / 12%),
+    0 16px 16px rgb(0 0 0 / 12%);
 }
 
 .reaction:hover {
-  background-color: rgb(248, 116, 204);
+  background-color: rgb(143, 112, 132);
+}
+
+.like-heart {
+  width: 60px;
 }

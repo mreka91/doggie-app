@@ -7,7 +7,8 @@ const Button = (props) => {
   return (
     <button onClick={props.handleClick} className="btn">
       {props.buttonText}
-      <img src={bone} alt="bone" />
+      <span className="dogs-left">{props.matchNumber}</span>
+      {/* <img src={bone} alt="bone" /> */}
     </button>
   );
 };

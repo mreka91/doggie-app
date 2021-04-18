@@ -1,17 +1,25 @@
 .btn {
-  padding: 10px 20px;
-  background-color: rgb(75, 11, 53);
+  padding: 15px 20px;
+  background-color: rgb(95, 9, 41, 1);
   border: 0;
-  border-radius: 2px;
+  border-radius: 50%;
   font-weight: 500;
-  font-size: 12px;
+  text-align: center;
+  font-size: 15px;
   letter-spacing: 1px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   transition: 0.2s ease;
   margin: 20px 0;
   cursor: pointer;
-  color: rgb(212, 164, 101);
+  color: rgb(255, 255, 255);
+}
+
+.btn .dogs-left {
+  font-size: 25px;
+  display: block;
+  text-align: center;
+  margin-top: 5px;
 }
 
 .btn img {
