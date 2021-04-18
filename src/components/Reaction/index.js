@@ -6,7 +6,7 @@ const Reaction = (props) => {
   return (
     <div className="reactions">
       <button className="reaction" onClick={props.handleClick}>
-      <img className="like-heart" src={props.icon}/>
+      <img className="like-heart" src={props.icon} alt="reaction"/>
       </button>
     </div>
   );

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import Title from "../../components/Title";
 import Card from "../../components/Card";
 import Reaction from "../../components/Reaction";
-import Button from "../../components/Button";
 import sadDog from "../../assets/images/saddog.png";
 import heart from "../../assets/images/heart-48-64.png";
 import notheart from "../../assets/images/x-mark-64.png";
