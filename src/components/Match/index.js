@@ -1,13 +1,13 @@
 import React from "react";
-import "./index.css";
 import PropTypes from "prop-types";
+import { MatchesFrameStyled, MatchesFrameTextStyled, MatchesFrameTitleStyled } from "./styles";
 
 const Match = (props) => {
   return (
-    <div className="matches-frame">
-      <h5>{props.match}</h5>
-      <p> {props.matchNumber}</p>
-    </div>
+    <MatchesFrameStyled>
+      <MatchesFrameTitleStyled>{props.match}</MatchesFrameTitleStyled>
+      <MatchesFrameTextStyled> {props.matchNumber}</MatchesFrameTextStyled>
+    </MatchesFrameStyled>
   );
 };
 
@@ -16,7 +16,7 @@ Match.propTypes = {
 };
 
 Match.defaultProps = {
-  match: "You have endless matches left!",
+  match: "Swipes left:",
 };
 
 export default Match;

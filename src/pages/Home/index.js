@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import Title from "../../components/Title";
-import Card from "../../components/Card";
 import Reaction from "../../components/Reaction";
 import sadDog from "../../assets/images/saddog.png";
 import heart from "../../assets/images/heart-48-64.png";
@@ -8,6 +7,7 @@ import notheart from "../../assets/images/x-mark-64.png";
 import "./index.css";
 import Match from "../../components/Match";
 import Results from "../../components/Results";
+import Kort from "../../components/Kort";
 
 
 const dogNames = require("dog-names");
@@ -44,11 +44,13 @@ const Home = () => {
 
   return (
     <div className="home-view">
-      <Title>Find your perfect match!</Title>
+      <div className="choose-view">
+      <Title>Go fetch!</Title>
+      
         {index <= dogs.length - 1 ? (
-          <Card image={dogs[index]} title={randomDogName} distance={randomDistance}/>
+          <Kort image={dogs[index]} title={randomDogName} distance={randomDistance}/>
         ) : (
-          <Card image={sadDog} title="Come back tomorrow to see more doggies" />
+          <Kort image={sadDog} title="Come back tomorrow to see more doggies" distance={0}/>
         )}
       <div className="reactions-home">
         <Reaction icon={heart} handleClick={() => next("like")} />
@@ -63,9 +65,11 @@ const Home = () => {
         )}
         <Reaction icon={notheart} handleClick={() => next("dislike")} />
       </div>
+      </div>
       <div className="matches-list">
 
       <Title>You matched with:</Title>
+     
       { matches.map((item, key) => {
             return (
               <Results image={item} key={key} title="It's a match"/>

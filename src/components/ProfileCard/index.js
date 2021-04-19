@@ -1,16 +1,16 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "./index.css";
+import { ProfileImageStyled, ProfileParStyled, ProfileStyled, ProfileTextStyled, ProfileTitleStyled } from "./styles";
 
 const ProfileCard = (props) => {
   return (
-    <article className="profile">
-      <img src={props.image} alt={props.alt} className="profile-image"/>
-      <div className="profile-text">
-        <h3>{props.title}</h3>
-        <p>{props.bio}</p>
-      </div>
-    </article>
+    <ProfileStyled>
+      <ProfileImageStyled src={props.image} alt={props.alt}/>
+      <ProfileTextStyled>
+        <ProfileTitleStyled>{props.title}</ProfileTitleStyled>
+        <ProfileParStyled>{props.bio}</ProfileParStyled>
+      </ProfileTextStyled>
+    </ProfileStyled>
   );
 };
 

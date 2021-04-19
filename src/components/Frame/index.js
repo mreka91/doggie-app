@@ -1,12 +1,12 @@
 import React from "react";
-import "./index.css";
+import { FrameStyled, FrameTextStyled } from "./styles";
 
 const Frame = (props) => {
   return (
-    <div className="frame">
-      <p>{props.factText}</p>
-      <p>{props.factDate}</p>
-    </div>
+    <FrameStyled>
+      <FrameTextStyled>{props.factText}</FrameTextStyled>
+      <FrameTextStyled>{props.factDate}</FrameTextStyled>
+    </FrameStyled>
   );
 };
 
