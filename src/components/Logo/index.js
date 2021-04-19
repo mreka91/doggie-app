@@ -1,12 +1,13 @@
 import React from "react";
-import "./index.css";
+import { LogotypeFamily, LogotypeImg } from "./styles";
+
 
 const Logo = (props) => {
     return (
-        <div className="logotype">
-        <img src={props.img} alt="logo"/>
+        <LogotypeFamily>
+        <LogotypeImg src={props.img} alt="logo"/>
         <h1>{props.companyLogo}</h1>
-    </div>
+    </LogotypeFamily>
     )
 }
 

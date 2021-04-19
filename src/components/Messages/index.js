@@ -1,12 +1,12 @@
 import React from "react";
-import "./index.css";
+import { MessageBoxStyled, MessagesTitleStyled } from "./styles";
 
 const Messages = (props) => {
   return (
-    <div className="messages-box">
-      <h1 className="messages-title">{props.headline}</h1>
+    <MessageBoxStyled>
+      <MessagesTitleStyled>{props.headline}</MessagesTitleStyled>
       <p>{props.message}</p>
-    </div>
+    </MessageBoxStyled>
   );
 };
 

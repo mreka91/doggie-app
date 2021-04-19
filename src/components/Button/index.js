@@ -1,14 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "./index.css";
 import bone from "../../assets/images/dog_bone.webp";
+import { ButtonImage, ButtonStyled } from "./styles";
 
 const Button = (props) => {
   return (
-    <button onClick={props.handleClick} className="btn">
+    <ButtonStyled onClick={props.handleClick}>
       {props.buttonText}
-      <img src={bone} alt="bone" />
-    </button>
+      <ButtonImage src={bone} alt="bone" />
+    </ButtonStyled>
   );
 };
 

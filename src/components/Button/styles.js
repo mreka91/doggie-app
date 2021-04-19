@@ -1,4 +1,7 @@
-.btn {
+import styled from "styled-components";
+
+
+export const ButtonStyled = styled.button` 
   padding: 15px 20px;
   background: linear-gradient(
     90deg,
@@ -16,15 +19,18 @@
   cursor: pointer;
   color: rgb(255, 255, 255);
   font-family: GothamRounded-Bold;
-}
 
-.btn img {
-  width: 30px;
-}
-.btn:hover {
+  &:hover {
   background: linear-gradient(
     90deg,
     rgba(252, 92, 92, 0.733) 0%,
-    rgba(252, 60, 130, 0.774) 100%
-  );
-}
+    rgba(252, 60, 130, 0.774) 100%;
+  }`;
+
+
+
+export const ButtonImage = styled.img`
+  width: 30px;
+  `;
+
+

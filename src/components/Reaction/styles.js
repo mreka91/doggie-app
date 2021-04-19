@@ -1,10 +1,6 @@
-/* .reactions {
-  padding: 10px;
-  display: flex;
-  justify-content: space-around;
-} */
+import styled from 'styled-components';
 
-.reaction {
+export const Reactions = styled.button`
   padding: 25px;
   background-color: #fc3c828e;
   border-radius: 50%;
@@ -13,23 +9,23 @@
     0 4px 4px rgb(0 0 0 / 12%), 0 8px 8px rgb(0 0 0 / 12%),
     0 16px 16px rgb(0 0 0 / 12%);
     outline: none;
-}
 
-.reaction:hover {
-  background-color: #fc895c;
+
+  &:hover {
+    background-color: #fc895c;
   outline: none;
-}
+  }
 
-.reaction:active {
+&:active {
   transform: scale(0.98);
   box-shadow: 3px 2px 2px 1px rgb(0 0 0 / 12%), 0 2px 2px rgb(0 0 0 / 12%),
   0 4px 4px rgb(0 0 0 / 12%), 0 8px 8px rgb(0 0 0 / 12%),
   0 16px 16px rgb(0 0 0 / 12%);
   outline: none;
-}
+}`;
 
-.like-heart {
+export const LikeImg = styled.img`
   width: 30px;
-}
+`;
 
 

@@ -1,15 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "./index.css";
+import { ContainerText, ImageContainer, ResultsImage } from "./styles";
+
 
 const Results = (props) => {
   return (
-    <article className="polaroid">
-      <img src={props.image} alt={props.alt} className="polaroid-image"/>
-      <div className="container">
+    <ImageContainer>
+      <ResultsImage src={props.image} alt={props.alt} className="polaroid-image"/>
+      <ContainerText />
         <h3>{props.title}</h3>
-      </div>
-    </article>
+    </ImageContainer>
   );
 };
 

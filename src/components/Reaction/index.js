@@ -1,14 +1,12 @@
 import React from "react";
+import { Reactions, LikeImg } from "./styles";
 
-import "./index.css";
 
 const Reaction = (props) => {
   return (
-    <div className="reactions">
-      <button className="reaction" onClick={props.handleClick}>
-      <img className="like-heart" src={props.icon} alt="reaction"/>
-      </button>
-    </div>
+      <Reactions onClick={props.handleClick}>
+      <LikeImg src={props.icon} alt="a little love"/>
+      </Reactions>
   );
 };
 

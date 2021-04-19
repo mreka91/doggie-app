@@ -14,7 +14,7 @@ const Barks = () => {
       />
       <Messages
         headline="Otis"
-        message="får jag bjuda dig på tuggben ikväll?"
+        message="Ska vi gräva ner nåt ikväll?"
       />
       <Messages
         headline="Trixa"
