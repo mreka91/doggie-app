@@ -25,10 +25,13 @@ export const ProfileTextStyled = styled.div`
 `;
 
 export const ProfileTitleStyled = styled.h3`
-  font-size: 22px;
+  font-size: 40px;
+  font-family: GothamRounded-Medium;
+  margin: 5px;
 `;
 
 export const ProfileParStyled = styled.p`
   font-size: 18px;
   padding: 15px;
+  font-family: GothamRounded-Medium;
 `;
