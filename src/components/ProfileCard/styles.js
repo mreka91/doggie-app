@@ -13,6 +13,7 @@ margin-bottom: 10px;
 export const ProfileImageStyled = styled.img`
 border-radius: 50%;
 width: 200px;
+margin: 15px;
 `;
 
 export const ProfileTextStyled = styled.div`

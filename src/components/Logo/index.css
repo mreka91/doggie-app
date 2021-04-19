@@ -1,0 +1,10 @@
+.logotype {
+  display: flex;
+  flex-direction: row;
+  letter-spacing: 1px;
+}
+
+.logotype img {
+  width: 32px;
+  padding: 2px;
+}

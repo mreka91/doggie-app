@@ -8,6 +8,8 @@ import "./index.css";
 import Match from "../../components/Match";
 import Results from "../../components/Results";
 import Kort from "../../components/Kort";
+import logo from "../../assets/images/paws.svg";
+import Logo from "../../components/Logo";
 
 
 const dogNames = require("dog-names");
@@ -38,14 +40,13 @@ const Home = () => {
     setIndex(index + 1);
     if (likeOrDislike === "like") {
     setMatches([...matches, dogs[index]]);
-    console.log(matches);
     }
   };
 
   return (
     <div className="home-view">
       <div className="choose-view">
-      <Title>Go fetch!</Title>
+        <Logo img={logo} companyLogo="gofetch" />
       
         {index <= dogs.length - 1 ? (
           <Kort image={dogs[index]} title={randomDogName} distance={randomDistance}/>
