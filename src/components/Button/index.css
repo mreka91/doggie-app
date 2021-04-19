@@ -1,6 +1,10 @@
 .btn {
   padding: 15px 20px;
-  background-color: #fc4c74;
+  background: linear-gradient(
+    90deg,
+    rgba(187, 92, 2, 0.733) 0%,
+    rgba(238, 4, 90, 0.774) 100%
+  );
   border: 0;
   border-radius: 50%;
   font-weight: 500;
@@ -11,18 +15,16 @@
   margin: 20px 0;
   cursor: pointer;
   color: rgb(255, 255, 255);
+  font-family: GothamRounded-Bold;
 }
 
-.btn .dogs-left {
-  font-size: 25px;
-  display: block;
-  text-align: center;
-  margin-top: 5px;
+.btn img {
+  width: 30px;
 }
-
-
 .btn:hover {
-  background-color: #fc5c5c;
-  
+  background: linear-gradient(
+    90deg,
+    rgba(252, 92, 92, 0.733) 0%,
+    rgba(252, 60, 130, 0.774) 100%
+  );
 }
-

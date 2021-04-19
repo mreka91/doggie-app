@@ -9,3 +9,7 @@
   justify-content: center;
   flex-direction: column;
 }
+
+.messages-title {
+  margin: 2px;
+}
