@@ -9,8 +9,7 @@ const Profile = () => {
   return (
     <div className="background">
       <div className="profil-view">
-        <ProfileCard image={profilePic} title="Maia" bio="Doggo ipsum. Smol heckin you are doin me a concern most angery pupper I 
-        have ever seen porgo very taste wow heck, wow such tempt vvv many pats puggo."/>
+        <ProfileCard image={profilePic} title="Maia" bio="Älskar bollar, bad och katter. hatar jack russels. "/>
         <Frame factText="Your last match was at" factDate={newDate}/>
       </div>
       </div>
