@@ -12,6 +12,7 @@ export const ProfileStyled = styled.article`
   max-width: 400px;
   margin-bottom: 10px;
   margin-top: 30px;
+  border-radius: 10px;
 `;
 
 export const ProfileImageStyled = styled.img`

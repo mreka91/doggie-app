@@ -1,7 +1,4 @@
-import styled from 'styled-components';
-
-
-
+import styled from "styled-components";
 
 export const MessageBoxStyled = styled.div`
   background-color: #fcfcfcd7;
