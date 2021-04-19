@@ -1,19 +1,18 @@
 .container {
   padding: 10px;
-  margin-bottom:25px;
-  
+  margin-bottom: 25px;
 }
 
 .polaroid {
   background-color: white;
-  width: 350px;
+  width: 450px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
-  margin-top:15px;
-  font-family:GothamRounded-Bold;
+  margin-top: 15px;
+  font-family: GothamRounded-Bold;
 }
 
 .polaroid-image {
-  width: 100%;
+  width: 450px;
   max-height: 450px;
 }

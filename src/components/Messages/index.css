@@ -1,0 +1,11 @@
+.messages-box {
+  background-color: #fcfcfcd7;
+  width: 300px;
+  margin: 5px;
+  border: 2px solid black;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}

@@ -7,6 +7,7 @@ background: linear-gradient(90deg, rgba(252, 92, 92, 0.733) 0%, rgba(252, 60, 13
 text-align: center;
 font-family: GothamRounded-Light;
 max-width:400px;
+margin-bottom: 10px;
 `;
 
 export const ProfileImageStyled = styled.img`
