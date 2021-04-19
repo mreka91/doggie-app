@@ -9,6 +9,7 @@ const NotFound = () => {
       <h1>404</h1>
       <p>Oh, no! No doggies?! Click to go back</p>
       <img
+        className="no-doggies"
         src="https://media.giphy.com/media/jkZtSdwKOx05BOlapR/giphy.gif"
         alt="no more doggies"
       />
