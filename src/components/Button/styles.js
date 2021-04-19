@@ -24,7 +24,7 @@ export const ButtonStyled = styled.button`
   background: linear-gradient(
     90deg,
     rgba(252, 92, 92, 0.733) 0%,
-    rgba(252, 60, 130, 0.774) 100%;
+    rgba(252, 60, 130, 0.774) 100%);
   }`;
 
 
